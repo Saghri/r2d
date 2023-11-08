@@ -1,0 +1,29 @@
+.customer_reviews{
+    padding: 20px;
+    height: 980px;
+    display: flex;
+    justify-content: center;
+    background-color: #F5F3F4;
+}
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 0 50px;
+}
+.testimonial_heading h1{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+}
+.parallelogram {
+	width: 230px !important;
+	height: 10px;
+	transform: skew(60deg);
+	background: transparent;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    margin: 0 auto;
+    margin-top: 20px !important;
+}

@@ -6,7 +6,9 @@ import './index.css';
 // import SearchCar from './Components/SearchCars/SearchCar';
 // import CarCategories from './Components/CarCategories/CarCategories';
 // import TopBrands from './Components/TopBrands/TopBrands';
-import RentalFleets from './Components/RentalFleets/RentalFleets';
+// import RentalFleets from './Components/RentalFleets/RentalFleets';
+import DownloadApp from './Components/DownloadApp/DownloadApp';
+// import Testimonials from './Components/Testimonials/Testimonials';
 // import Footer from './Components/Footer/Footer';
 
 import reportWebVitals from './reportWebVitals';
@@ -23,7 +25,9 @@ root.render(
     <SearchCar/>
     <CarCategories/>
     <TopBrands/> */}
-    <RentalFleets/>
+    {/* <RentalFleets/> */}
+    <DownloadApp/>
+    {/* <Testimonials/> */}
     {/* <Footer/> */}
     {/* <App /> */}
   </React.StrictMode>
