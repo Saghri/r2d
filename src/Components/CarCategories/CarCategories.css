@@ -1,0 +1,69 @@
+.CarCategories{
+    margin-bottom: 50px;
+}
+.CarCategories_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.CarCategories_text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #222222;
+}
+.CarCategories_text h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 21px;
+}
+
+.parallelogram {
+	width: 230px !important;
+	height: 10px;
+	transform: skew(60deg);
+	background: white;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    margin: 0 auto;
+    margin-top: 20px !important;
+}
+
+.CarCategories_types{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 340px;
+    height: 400px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.cardImage img{
+    width: 320px;
+    height: 275px;
+    border-radius: 10px;
+	
+}
+.cardImage img:hover{
+    transform: scale(1.08);
+	transition: .3s ease-in-out;
+}
+.cardTitle{
+    margin: 10px 0;
+}
+.cardTitle a{
+    text-decoration: none;
+    color: black;
+}
+.card:hover{
+    background-color: #30D5C8;
+    cursor: pointer;
+}

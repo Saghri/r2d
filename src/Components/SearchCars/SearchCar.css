@@ -1,0 +1,80 @@
+.SearchCar{
+    background-image: url('../../images/-car---yacht-and-trucks-in-dubai.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+/* .SearchCar_heading{
+    margin-top: -190px;
+} */
+.SearchCar_heading h1{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+/* .SearchCar_SubHeading{
+    padding-bottom: 00px;
+} */
+.SearchCar_SubHeading p{
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+.SearchBar{
+    width: 684px !important;
+    margin: 0 auto;
+    height: 80px;
+    background-color: #1F2B34BF;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.search{
+    width: 450px;
+    height: 40px;
+    background-color: #FFFFFF;
+    color: black;
+    text-align: left;
+    padding: 10px 10px 10px 35px;
+    border-radius: 7px;
+}
+.search{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 18px;
+}
+.view_allCars{
+    width: 192px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 7px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #30D5C8;
+    color: white;
+    margin-left: 8px;
+}
+.view_allCars div{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #30D5C8;
+    background-color: white;
+    display: inline-block;
+    line-height: 20px;
+}
+.view_allCars:hover{
+    background-color: #54e9dd;
+}

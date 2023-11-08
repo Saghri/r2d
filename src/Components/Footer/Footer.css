@@ -1,0 +1,91 @@
+footer{
+    background-image: url('../../images/footer_background\ .png');
+    height: 846px;
+    background-color: #181818;
+    color: white;
+    overflow: hidden;
+}
+.footer_left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 279px;
+}
+.footer_left_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 499px;
+    height: 162px;
+    text-align: center;
+}
+.footer_left_heading{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    
+}
+.footer_left_body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    padding: 10px 40px;
+}
+
+.footer_mid{
+    margin-top: 214px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo_bottom{
+    padding: 20px 0;
+}
+
+.social_media{
+    padding-top: 30px;
+    margin-right: 20px;
+}
+.social_media ul li{
+    display: inline;
+    margin: 0 5px;
+}
+.social_media ul li a{
+    text-decoration: none;
+}
+
+.footer_right{
+    margin-top: 285px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_right h1{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+}
+.footer_right div{
+    margin: 10px 0;
+}
+.footer_right span,p{
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 400;
+   font-size: 21px;
+   line-height: 30px;
+}
+.contact_detail{
+    color: #FFFFFF80;
+    letter-spacing: 2.1px;
+}
+.copyright{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #999999;
+}

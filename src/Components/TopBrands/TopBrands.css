@@ -1,0 +1,65 @@
+.TopBrands{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #F5F3F4;
+    padding: 100px;
+}
+.TopBrands_heading h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+}
+.parallelogram {
+	width: 250px !important;
+	height: 10px;
+	transform: skew(60deg);
+	background: transparent;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    margin: 0 auto;
+}
+
+.brands{
+    margin-top: 80px !important;
+    display: flex;
+    column-gap: 34px;
+    text-align: center;
+    justify-content: center;
+}
+.brand_box img{
+    width: 150px;
+    height: 150px;
+    mix-blend-mode: multiply;
+}
+.brand_box img:hover{
+    transform: rotateY(360deg);
+    transition: 1s;
+}
+.brand_box img:hover + .brand_name{
+    color: #30D5C8;
+}
+.brand_name{
+    margin-top: 20px;
+}
+.brand_name h2{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+}
+.All_brands{
+    margin-top: 30px !important;
+    display: flex;
+    justify-content: center;
+    /* transform: skew(150deg); */
+}
+.viewAll_brands{
+    background-color: white;    
+    width: 130px !important;
+    height: 41px;
+    padding: 6px 0;
+    font-weight: 700;
+}
+.viewAll_brands:hover{
+    cursor: pointer;
+}
