@@ -1,0 +1,53 @@
+.our_fleets{
+    margin: 20px 180px;
+}
+
+.fleet_heading{
+    text-align: center;
+}
+.fleet_heading h2{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.parallelogram {
+	width: 250px !important;
+	height: 10px;
+	transform: skew(60deg);
+	background: transparent;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.fleet{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 40px;
+    text-align: center;
+}
+.fleet_car{
+    width: 450px;
+    height: 390px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+.fleet_car:hover{
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+.fleet_car h3{
+    margin-top: 20px;
+    font-weight: 700;
+}
+.fleet_car img{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 450px;
+    height: 290px;
+}

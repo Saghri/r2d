@@ -7,8 +7,8 @@
     align-items: center;
     height: 4.875rem;
     background-color: #333333;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 16px;
 }
 .header_mid_left{
@@ -20,19 +20,23 @@
 }
 .header_mid_right{
     position: absolute;
-    right: 176px;
+    right: 170px;
     color: white;
     margin: 20px 0;
     display: flex;
-    column-gap: 4rem;
+    column-gap: 2rem;
+}
+.header_mid_right a{
+   text-decoration: none;
+   color: white;
 }
 
 .navbar{
     height: 3.313rem;
-    background-color: #F5F3F4;
+    background-color: white;
     padding-left: 180px !important;
-    font-weight: 400;
-    font-size: 18px;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 13px;
 }
 Nav{
@@ -42,7 +46,7 @@ Nav{
     color: black !important;
 }
 .navbar_links:hover{
-    color: #30D5C8 !important;
+    color: #d56130 !important;
     border-bottom: 2px solid #30D5C8;
 }
 .navbar_links:active{

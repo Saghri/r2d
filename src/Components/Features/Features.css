@@ -1,0 +1,50 @@
+.features{
+    margin: 50px 180px;
+}
+
+.features_heading{
+    margin-bottom: 40px;
+}
+.features_heading h1{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+}
+.features_box h2{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+}
+.features_box span{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #00000080;
+}
+
+.features_box{
+    display: flex;
+    column-gap: 20px;
+    margin: 20px 0;
+}
+
+.feature_logo{
+    width: 110px;
+    height: 100px;
+    background-color: #30D5C8;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.feature_logo:hover{
+    background-color: black;
+}
+.feature_detail{
+    margin: auto 0;
+}
+/* .feature_car{
+    margin-left: 30px;
+}
+.feature_car img{
+    width: 200px;
+} */

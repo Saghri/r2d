@@ -1,0 +1,22 @@
+.customer{
+    height: 400px;
+    background-color: black;
+    opacity: 0.6;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customer_details{
+    width: 400px;
+}
+.customer_details span{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.customer_details h2{
+    margin-top: 10px;
+}

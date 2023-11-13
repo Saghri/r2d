@@ -9,3 +9,10 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+/* body{
+  background-image: url(images/BMW.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+} */

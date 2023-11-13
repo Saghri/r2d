@@ -32,6 +32,11 @@ footer{
     line-height: 23px;
     padding: 10px 40px;
 }
+.footer_left_buttons img{
+    width: 232px;
+    height: 74px;
+    border-radius: 10px;
+}
 
 .footer_mid{
     margin-top: 214px;
@@ -89,3 +94,15 @@ footer{
     line-height: 19px;
     color: #999999;
 }
+
+/* @media (min-width: 1550px)
+{
+    footer{
+        height: 500px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer_left{
+        margin-top: 40px;
+    }
+} */

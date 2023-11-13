@@ -1,5 +1,6 @@
 .CarCategories{
     margin-bottom: 50px;
+    overflow-x: hidden;
 }
 .CarCategories_text{
     display: flex;

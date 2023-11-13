@@ -1,0 +1,33 @@
+.self_driven{
+    background-color: #F5F3F4;
+    padding: 10px 180px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 40px;
+}
+.self_driven p{
+    font-weight: 600;
+    margin-top: 10px;
+}
+.self_driven p:hover{
+    text-decoration: underline;
+}
+.Selfdriven_car{
+    text-align: center;
+    background-color: white;
+    height: 350px;
+}
+.Selfdriven_car:hover{
+    cursor: pointer;
+}
+.Selfdriven_car img{
+    width: 350px;
+    height: 200px;
+}
+
+.car_detail_icon{
+    display: flex;
+    justify-content: center;
+}

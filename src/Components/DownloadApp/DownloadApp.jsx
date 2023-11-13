@@ -3,7 +3,7 @@ import "./DownloadApp.css";
 import { Row, Col } from "reactstrap";
 import Download_app from "../../images/Download App.png";
 import GooglePlay from "../../images/GooglePlay.jpg";
-import AppStore from "../../images/AppStore.png";
+import AppStore from "../../images/appStore.png";
 
 export default function DownloadApp() {
   return (
@@ -12,7 +12,7 @@ export default function DownloadApp() {
         <Col lg="6" md="6" sm="6">
           <div className="download_details">
             <h2>Download Our App</h2>
-            <h1>ONE APP, MILLIONS OF USERS</h1>
+            <h1>ONE APP,<br /> MILLIONS OF USERS</h1>
             <p>
               Discover the ultimate convenience in car rental with our
               user-friendly and feature-packed mobile app. Whether you’re a
@@ -26,6 +26,7 @@ export default function DownloadApp() {
             </p>
             <div className="gettApp_images">
                 <img src={GooglePlay} alt="" />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <img src={AppStore} alt="" />
             </div>
           </div>
