@@ -14,13 +14,14 @@ export default function SearchCar() {
         </Row>
         <Row>
             <div className="SearchCar_SubHeading">
-                <p>Book directly from local suppliers. No commission, no mark-ups.</p>
+                <p>Practical & Convenient Auto Hire, As Low As 15 AED / day</p>
             </div>
         </Row>
         <Row>
             <div className="SearchBar">
-                <span className='search'><search>{search}</search></span>
-                <button className='view_allCars'>VIEW ALL CARS&nbsp;&nbsp; <div><i class="ri-arrow-right-s-line"></i></div></button> 
+                <span className='pick_up_Date'>Pick Up</span>
+                <span className='drop_off_Date'>Drop Off</span>
+                <button className='view_allCars'>FIND IT NOW</button> 
             </div>
         </Row>
       </Col>

@@ -1,0 +1,38 @@
+export const Car = [
+  {
+    id: 1,
+    name: "LandRover Defender V6",
+    maker: "LandRover",
+    model: 2021,
+    price: 2300,
+    image: "../cars/LandRover Defender V6.jpg",
+    miles: 3000,
+  },
+  {
+    id: 2,
+    name: "Nissan Xterra 2023",
+    maker: "LandRover",
+    model: 2023,
+    price: 23000,
+    image: "../cars/Nissan Xterra 2023.png",
+    miles: 53000,
+  },
+  {
+    id: 3,
+    name: "Nissan Petrol",
+    maker: "Nissan",
+    model: 2020,
+    price: 400,
+    image: "../cars/Nissan Petrol.png",
+    miles: 13000,
+  },
+  {
+    id: 4,
+    name: "Toyota Fortuner",
+    maker: "Toyota",
+    model: 2022,
+    price: 300,
+    image: "../cars/Toyota Fortuner.png",
+    miles: 3500,
+  },
+];

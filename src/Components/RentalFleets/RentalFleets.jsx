@@ -1,6 +1,6 @@
 import React from "react";
 import "./RentalFleets.css";
-import bmw_chauffer from '../../images/bmw Chauffer.jpeg'
+import { Car } from "../../Data/cars_details";
 
 export default function RentalFleets() {
   return (
@@ -10,30 +10,14 @@ export default function RentalFleets() {
         <div className="parallelogram"></div>
       </div>
       <div className="fleet">
-        <div className="fleet_car">
-          <img src={bmw_chauffer} alt="fleet_car1" />
-          <h3>Lexus ES 300 H with Chauffeur</h3>
+      {
+      Car.map((car)=>(
+      <div className="fleet_car">
+          <img src={car.image} alt={car.name} />
+          <h3>{car.name}</h3>
         </div>
-        <div className="fleet_car">
-          <img src={bmw_chauffer} alt="fleet_car2" />
-          <h3>GMC with Chauffeur</h3>
-        </div>
-        <div className="fleet_car">
-          <img src={bmw_chauffer} alt="fleet_car3" />
-          <h3>Highlander with Chauffeur</h3>
-        </div>
-        <div className="fleet_car">
-          <img src={bmw_chauffer} alt="fleet_car4" />
-          <h3>BMW 7 Series with Chauffeur</h3>
-        </div>
-        <div className="fleet_car">
-          <img src={bmw_chauffer} alt="fleet_car5" />
-          <h3>Nissan Petrol</h3>
-        </div>
-        <div className="fleet_car">
-          <img src={bmw_chauffer} alt="fleet_car6" />
-          <h3>Toyota Fortuner</h3>
-        </div>
+        ))
+      }
       </div>
     </div>
   );

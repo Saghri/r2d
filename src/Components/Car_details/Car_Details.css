@@ -1,0 +1,127 @@
+.Container_box{
+    padding: 20px 180px;
+    background-color: #F5F3F4;
+    display: flex;
+    column-gap: 20px;
+}
+.carName{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 20px;
+}
+.carName h2{
+    padding: 0 0 0 40px;
+    border-left: 4px solid #30D5C8;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.SelectedCar_details{
+    display: flex;
+}
+.DisplayPic{
+    width: 700px;
+    height: 450px;
+}
+.interiorPics{
+    margin: 10px 0;
+    width: 740px;
+    display: flex;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    row-gap: 10px;
+}
+.interiorPics img{
+    width: 150px;
+    height: 120px;
+    border-radius: 5px;
+}
+.carPrice{
+    padding: 20px;
+    color: white;
+    background-color: #4D4D4D;
+    height: fit-content;
+}
+.carPrice_heading{
+    border-bottom: 1px dotted white;
+}
+
+.carSpecs, .carFeatures, .carDescription{
+    margin: 60px 0;
+    width: 700px;
+}
+.Specs_heading, .Features_heading, .description_heading{
+    display: flex;
+    align-items: center;
+    border-bottom: 2px dotted black;
+}
+.Specs_heading h3, .Features_heading h3, .description_heading h3{
+    border-left: 4px solid #30D5C8;
+    padding-left: 30px;
+    font-weight: 600;
+}
+
+.Specs_details{
+    display: flex;
+    column-gap: 50px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+.carSpec, .car_feature{
+    width: 200px;
+}
+.icon{
+    font-size: 30px;
+}
+.carDescription p{
+    padding-top: 10px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Pricing table */
+.carPrice table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+  }
+ .carPrice th, .carPrice td {
+    border-right: 1px dotted white;
+    border-bottom: 1px dotted white;
+    padding: 8px;
+    text-align: left;
+  }
+  
+
+  /* Booking Details */
+  .booking_details{
+    background-color: white;
+    padding: 30px 0;
+    width: 350px;
+  }
+
+  .booking_heading{
+    border-left: 4px solid #30D5C8;
+    margin-bottom: 15px;
+}
+.booking_heading h4{    
+    font-weight: 600;
+    padding-left: 10px;
+  }
+
+  .document_details{
+    margin: 0 20px;
+  }
+  .document_details div{
+    background-color: #4D4D4D;
+    color: white;
+    padding: 5px 5px;
+  }
+  .document_details h5{
+    margin: auto 0;
+  }
+.document_details p{
+    font-size: 16px;
+}

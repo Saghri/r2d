@@ -1,32 +1,27 @@
 .SearchCar{
-    background-image: url('../../images/-car---yacht-and-trucks-in-dubai.png');
+    background-image: url('../../images/Car_Select.png');
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
+    width: 99vw;
+    height: 60vh;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     text-align: center;
-    margin-bottom: -50px;
+    filter: brightness(80%);
 }
 
-/* .SearchCar_heading{
-    margin-top: -190px;
-} */
 .SearchCar_heading h1{
-    font-weight: 800;
-    font-size: 48px;
+    font-weight: 700;
+    font-size: 60px;
     line-height: 35px;
     margin-bottom: 40px;
 }
-/* .SearchCar_SubHeading{
-    padding-bottom: 00px;
-} */
+
 .SearchCar_SubHeading p{
     font-weight: 400;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 24px;
     margin-bottom: 60px;
 }

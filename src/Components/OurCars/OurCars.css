@@ -22,7 +22,12 @@
     flex-wrap: wrap;
 }
 .car h3{
+    margin-top: 10px;
     font-weight: 700;
+}
+.car img{
+    width: 440px;
+    height: 340px;
 }
 
 .Chauffer_driven{

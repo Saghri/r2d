@@ -1,5 +1,5 @@
 import React from "react";
-import "./Self_driven.css";
+import "../Self_Driven/Self_driven.css";
 import { Car } from '../../Data/cars_details'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRoad } from "@fortawesome/free-solid-svg-icons";

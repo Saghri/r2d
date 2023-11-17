@@ -17,14 +17,14 @@
 .Selfdriven_car{
     text-align: center;
     background-color: white;
-    height: 350px;
+    height: 450px;
 }
 .Selfdriven_car:hover{
     cursor: pointer;
 }
 .Selfdriven_car img{
-    width: 350px;
-    height: 200px;
+    width: 450px;
+    height: 300px;
 }
 
 .car_detail_icon{
