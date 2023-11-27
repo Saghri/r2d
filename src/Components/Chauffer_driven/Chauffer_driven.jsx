@@ -5,10 +5,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRoad } from "@fortawesome/free-solid-svg-icons";
 
 export default function Self_driven() {
+
+  const chaufferDrivenCars = Car.filter((car) => car.car_category === 'chauffer driven');
   return (
     <div className="self_driven">
       {
-        Car.map((car)=>(
+        chaufferDrivenCars.map((car)=>(
           <div className="Selfdriven_car">
         <img src={car.image} alt={car.name} />
         <p className="Car_name">{car.name}</p>

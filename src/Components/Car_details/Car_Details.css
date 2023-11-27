@@ -100,13 +100,14 @@
     background-color: white;
     padding: 30px 0;
     width: 350px;
+    height: fit-content;
   }
 
   .booking_heading{
     border-left: 4px solid #30D5C8;
     margin-bottom: 15px;
 }
-.booking_heading h4{    
+.booking_heading h4, .dropOff_heading h4{    
     font-weight: 600;
     padding-left: 10px;
   }
@@ -124,4 +125,76 @@
   }
 .document_details p{
     font-size: 16px;
+}
+
+/* Date-time Picker */
+#datePicker{
+    margin-left: 20px;
+}
+/* #selectedDate{
+    margin-left: 20px;
+    background-color: beige;
+    height: 50px;
+    padding: 5px 10px;
+    font-size: 14px;
+} */
+
+.book_car{
+    margin: 50px 0;
+}
+.dropOff_heading{
+    margin-top: 20px;
+    border-left: 4px solid #30D5C8;
+    margin-bottom: 15px;
+}
+
+.book_btn{
+    margin: 30px 0 0 45px;
+    width: 250px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 5px;
+    color: white;
+    background-color: #30D5C8;
+    border-radius: 10px;
+    border: none;
+}
+.book_btn:hover{
+    background-color: orange;
+}
+
+
+/* Related Cars */
+
+.relatedCar_heading{
+    border-left: 4px solid #30D5C8;
+    margin-bottom: 15px;
+}
+.relatedCar_heading h4{
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.relatedCar{
+    padding: 10px 5px 10px 10px;
+    display: flex;
+    column-gap: 5px;
+}
+.relatedCar img{
+    width: 130px;
+}
+.relatedCar p{
+    font-size: 16px;
+    font-weight: 600;
+}
+#name:hover{
+    color: #30D5C8;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#price{
+    color: #30D5C8;
+    
+    line-height: 10px;
 }

@@ -1,5 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Car_Details.css";
+import { Car } from "../../Data/cars_details";
+
+// DateTime Picker
+import DateTimePicker from "react-datetime-picker";
+import "react-datetime-picker/dist/DateTimePicker.css";
+import "react-calendar/dist/Calendar.css";
+import "react-clock/dist/Clock.css";
+
 import { FaCar } from "react-icons/fa";
 import { FaGears, FaFloppyDisk } from "react-icons/fa6";
 import { GiCarDoor, GiGearStickPattern } from "react-icons/gi";
@@ -19,6 +27,20 @@ import car3 from "../../images/LandRover Defender V6 Pic 3.jpeg";
 import car4 from "../../images/LandRover Defender V6 Pic 4.jpeg";
 
 export default function Car_Details() {
+  const [pickUpDate, setPickUpDate] = useState(new Date());
+  const [dropOffDate, setDropOffDate] = useState(new Date());
+
+  const handlePickUpDateChange = (newValue) => {
+    setPickUpDate(newValue);
+  };
+
+  const handleDropOffDateChange = (newValue) => {
+    setDropOffDate(newValue);
+  };
+
+  // Related Cars
+  const carPics = Car.slice(0, 5);
+
   return (
     <div className="Container_box">
       <div className="car_details">
@@ -178,12 +200,16 @@ export default function Car_Details() {
           </div>
         </div>
       </div>
+
+      {/* Booking Details */}
       <div className="booking_details">
         <div className="booking_heading">
           <h4>REQUIRED DOCUMENTS:</h4>
         </div>
         <div className="document_details">
-          <div><h5>For UAE Residents</h5></div>
+          <div>
+            <h5>For UAE Residents</h5>
+          </div>
           <p>
             <FcApproval /> UAE Driving License
           </p>
@@ -211,8 +237,46 @@ export default function Car_Details() {
 
         <div className="book_car">
           <div className="booking_heading">
-            <h4>PICK-UP DATE</h4>
+            <h4>PICK-UP DATE:</h4>
           </div>
+          <div id="datePicker">
+            <DateTimePicker
+              onChange={handlePickUpDateChange}
+              value={pickUpDate}
+            />
+          </div>
+          {/* <p id="selectedDate">Pick-Up Date: {pickUpDate.toLocaleString()}</p> */}
+
+          <div className="dropOff_heading">
+            <h4>DROP-OFF DATE:</h4>
+          </div>
+          <div id="datePicker">
+            <DateTimePicker
+              onChange={handleDropOffDateChange}
+              value={dropOffDate}
+            />
+          </div>
+          {/* <p id="selectedDate">Drop-off Date: {dropOffDate.toLocaleString()}</p> */}
+
+          <button className="book_btn">Book Your Car Now!</button>
+        </div>
+        <div className="related_cars">
+          <div className="relatedCar_heading">
+            <h4>RELATED CARS:</h4>
+          </div>
+          {
+            carPics.map((car)=>(
+              <div className="relatedCar">
+            <div>
+              <img src={car.image} alt={car.name} />
+            </div>
+            <div>
+              <p id="name">{car.name}</p>
+              <p id="price">Price: &nbsp; {car.price} AED</p>
+            </div>
+          </div>
+            ))
+          }
         </div>
       </div>
     </div>
