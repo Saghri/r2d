@@ -26,7 +26,7 @@ import car2 from "../../images/LandRover Defender V6 Pic 2.jpeg";
 import car3 from "../../images/LandRover Defender V6 Pic 3.jpeg";
 import car4 from "../../images/LandRover Defender V6 Pic 4.jpeg";
 
-export default function Car_Details() {
+export default function Car_Details({match}) {
   const [pickUpDate, setPickUpDate] = useState(new Date());
   const [dropOffDate, setDropOffDate] = useState(new Date());
 

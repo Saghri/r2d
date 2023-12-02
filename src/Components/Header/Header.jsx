@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "../../images/logo.png";
+import { Link } from "react-router-dom";
 import {
   Row,
   Col,
   Nav,
-  NavLink,
   NavItem,
   UncontrolledDropdown,
   DropdownToggle,
@@ -47,43 +47,43 @@ export default function Header() {
       <div className="navbar">
         <Nav>
           <NavItem>
-            <NavLink className="navbar_links" active href="#">
+            <Link exact to='/home' className="navbar_links" >
               Home
-            </NavLink>
+            </Link>
           </NavItem>
           <NavItem>
-            <NavLink className="navbar_links" href="#">
+            <Link exact to="/OurCar" className="navbar_links">
               Our Cars
-            </NavLink>
+            </Link>
           </NavItem>
           <NavItem>
-            <NavLink className="navbar_links" href="#">
+            <Link className="navbar_links" exact to='/SelfDriven'>
               Self Driven
-            </NavLink>
+            </Link>
           </NavItem>
           <NavItem>
-            <NavLink className="navbar_links" href="#">
+            <Link className="navbar_links" exact to='/ChaufferDriven'>
               Chauffeur Driven
-            </NavLink>
+            </Link>
           </NavItem>
           <NavItem>
-            <NavLink className="navbar_links" href="#">
+            <Link className="navbar_links" exact to='/Get_App'>
               Get APP
-            </NavLink>
+            </Link>
           </NavItem>
           <NavItem>
-            <NavLink className="navbar_links" href="$">
+            <Link className="navbar_links" exact to=''>
               Our News
-            </NavLink>
+            </Link>
           </NavItem>
           <UncontrolledDropdown nav inNavbar>
-            <DropdownToggle nav caret className="navbar_links">
+            <DropdownToggle nav caret className="toggle_navbar_links">
               About Us
             </DropdownToggle>
             <DropdownMenu right>
-              <DropdownItem>Company Profile</DropdownItem>
+              <DropdownItem><Link className="drop_navbar_links" exact to='/CompanyProfile'>Company Profile</Link></DropdownItem>
               <br />
-              <DropdownItem>Contact</DropdownItem>
+              <DropdownItem><Link className="drop_navbar_links" exact to='/Contact'>Contact</Link></DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
         </Nav>
