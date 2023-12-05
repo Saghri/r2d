@@ -16,6 +16,8 @@ import Get_App from './Pages/Get_App/Get_App';
 import CompanyProfile from './Pages/CompanyProfile/CompanyProfile';
 import Contact from './Pages/Contact/Contact';
 // import CarDetails from './Pages/Car_Details_Page/CarDetails';
+import Sign_up from "./Components/Signup/Sign_up";
+import Log_in from "./Components/Login/Log_in";
 
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -34,6 +36,8 @@ root.render(
         <Route exact path="/CompanyProfile" element={<CompanyProfile />} />
         <Route exact path="/Contact" element={<Contact />} />
         <Route exact path="/home" element={<Homepage />} />
+        <Route exact path="/Signup" element={<Sign_up />} />
+        <Route exact path="/Login" element={<Log_in />} />
         {/* <Route exact path="/" element={<Homepage />} /> */}
        
       </Routes>

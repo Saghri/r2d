@@ -38,7 +38,7 @@ export default function Header() {
               <span><FontAwesomeIcon icon={faLanguage} size="lg" style={{color: "white",}} />&nbsp; English</span>
 
               <span>
-                <a href="$"><FontAwesomeIcon icon={faUser} size="lg" style={{color: "#f0f2f4",}} />&nbsp; Login / Signup</a>
+                <Link exact to='/Signup'><FontAwesomeIcon icon={faUser} size="lg" style={{color: "#f0f2f4",}} />&nbsp; Login / Signup</Link>
               </span>
             </div>
           </Col>
@@ -47,7 +47,7 @@ export default function Header() {
       <div className="navbar">
         <Nav>
           <NavItem>
-            <Link exact to='/home' className="navbar_links" >
+            <Link exact to='/home' className="navbar_links">
               Home
             </Link>
           </NavItem>

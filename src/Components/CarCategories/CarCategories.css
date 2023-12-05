@@ -48,20 +48,18 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 .cardImage img{
-    width: 320px;
-    height: 275px;
+    width: 220px;
+    height: 175px;
     border-radius: 10px;
 	
 }
-.cardImage img:hover{
-    transform: scale(1.08);
-	transition: .3s ease-in-out;
-}
+
 .cardTitle{
     margin: 10px 0;
 }
 .cardTitle a{
     text-decoration: none;
+    font-weight: 600;
     color: black;
 }
 .card:hover{

@@ -1,8 +1,9 @@
 import React from "react";
 import "./CarCategories.css";
 import { Row, Col } from "reactstrap";
-import sedan from '../../images/Luxury-Sedans.jpg'
-import SUV from '../../images/SUV.webp'
+import selfDriven from '../../images/Self_driven.png'
+import chaufferDriven from '../../images/Chauffer_driven.png'
+import { Link } from "react-router-dom";
 
 export default function CarCategories() {
   return (
@@ -25,17 +26,17 @@ export default function CarCategories() {
           <Col lg='6' md='6' sm='6'>
             <div className="card">
                 <div className="cardImage">
-                    <img src={sedan} alt="" />
+                    <img src={selfDriven} alt="" />
                 </div>
-                <div className="cardTitle"><h2><a href="&">Self Driven</a></h2></div>
+                <div className="cardTitle"><h2><Link exact to='/SelfDriven'>Self Driven</Link></h2></div>
             </div>
           </Col>
           <Col lg='6' md='6' sm='6'>
             <div className="card">
                 <div className="cardImage">
-                    <img src={SUV} alt="" />
+                    <img src={chaufferDriven} alt="" />
                 </div>
-                <div className="cardTitle"><h2><a href="&">Chauffuer Driven</a></h2></div>
+                <div className="cardTitle"><h2><Link exact to='/ChaufferDriven'>Chauffuer Driven</Link></h2></div>
             </div>
           </Col>
         </Row>
