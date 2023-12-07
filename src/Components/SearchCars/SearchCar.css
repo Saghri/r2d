@@ -7,7 +7,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     text-align: center;
     filter: brightness(80%);
 }
@@ -26,7 +25,7 @@
     margin-bottom: 60px;
 }
 .SearchBar{
-    width: 684px !important;
+    /* width: 684px !important; */
     margin: 0 auto;
     height: 80px;
     background-color: #1F2B34BF;
@@ -61,15 +60,20 @@
     color: white;
     margin-left: 8px;
 }
-.view_allCars div{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    color: #30D5C8;
-    background-color: white;
-    display: inline-block;
-    line-height: 20px;
+.view_allCars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: none;
+    font-size: 18px;
 }
 .view_allCars:hover{
     background-color: #54e9dd;
+}
+
+.datePicker{
+    border-radius: 10px;
+    padding: 16px;
+    height: 45px;
 }

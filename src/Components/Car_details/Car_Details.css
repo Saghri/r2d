@@ -125,19 +125,13 @@
   }
 .document_details p{
     font-size: 16px;
+    text-align: left;
 }
 
 /* Date-time Picker */
 #datePicker{
     margin-left: 20px;
 }
-/* #selectedDate{
-    margin-left: 20px;
-    background-color: beige;
-    height: 50px;
-    padding: 5px 10px;
-    font-size: 14px;
-} */
 
 .book_car{
     margin: 50px 0;

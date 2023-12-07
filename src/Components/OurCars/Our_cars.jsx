@@ -1,18 +1,16 @@
 import React from 'react';
 import './OurCars.css';
 import { Car } from '../../Data/cars_details';
-import { Link, useNavigate } from 'react-router-dom';
-import CarDetails from '../../Pages/Car_Details_Page/CarDetails';
-// import Car_Details from '../Car_details/Car_Details';
+import { Link, useNavigate} from 'react-router-dom';
 
 export default function Our_cars() {
   const selfDrivenCars = Car.filter((car) => car.car_category === 'self driven');
   const chaufferDrivenCars = Car.filter((car) => car.car_category === 'chauffer driven');
 
-  // const handleCarClick = (carId) => {
-  //   // Redirect to car details page with the selected car ID
-  //   window.location.href = `/car-details/${carId}`;
-  // };
+  const navigate = useNavigate();
+  const handleCarClick = (carId) => {
+    navigate(`/carDetails`, { state: { carId: carId } });
+  };
 
   return (
     <div className='ourCars'>
@@ -20,12 +18,12 @@ export default function Our_cars() {
         <div className='heading'><h2>SELF DRIVEN</h2></div>
         <div className="driven_cars">
           {selfDrivenCars.map((car) => (
-            <div className="car" id={car.id}>
+            <div className="car" id={car.id} onClick={() => handleCarClick(car.id)}>
               
                 <img src={car.image[0]} alt={car.name} />
               
               <h3>{car.name}</h3>
-              <button >View Details</button>
+              <Link className='link_viewDetails' to={{ pathname: '/carDetails', state: { carId: car.id } }}>View Details</Link>
             </div>
           ))}
         </div>
@@ -35,11 +33,10 @@ export default function Our_cars() {
         <div className='heading'><h2>CHAUFFER DRIVEN</h2></div>
         <div className="driven_cars">
           {chaufferDrivenCars.map((car) => (
-            <div className="car" id={car.id}>
-              {/* <Link to={`/car-details/${car.id}`}> */}
+            <div className="car" id={car.id} onClick={() => handleCarClick(car.id)}>
                 <img src={car.image[0]} alt={car.name} />
-              {/* </Link> */}
               <h3>{car.name}</h3>
+              <Link className='link_viewDetails' to={{ pathname: '/carDetails', state: { carId: car.id } }}>View Details</Link>
             </div>
           ))}
         </div>

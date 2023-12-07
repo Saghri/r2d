@@ -33,3 +33,13 @@
 .Chauffer_driven{
     margin-top: 100px;
 }
+.link_viewDetails{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+    background-color: #30D5C8;
+    border-radius: 10px;
+}
+.link_viewDetails:hover{
+    background-color: #54e9dd;
+}

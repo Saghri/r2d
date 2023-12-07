@@ -4,51 +4,20 @@
     color: rgb(104, 103, 103);
 }
 
-.profile_details{
+.profile_document{
+    border: 1px solid black;
     background-color: white;
-    padding: 10px 40px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    row-gap: 20px;
 }
-.profile_details p{
-    font-size: 16px;
-}
-.input_tags input{
-    width: 600px;
-    height: 50px;
-    border: none;
-    padding: 10px 0 10px 10px;
-    background-color: #F5F3F4;
-}
-.input_tags input[type=text]{
-    margin-right: 10px;
-}
-
-label{
-    font-weight: bold;
-}
-
-.comment_form button[type=submit]{
-    width: 200px;
-    height: 70px;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 15px;
-    border: none;
-    border-right: 4px solid black;
-    background-color: #30D5C8;
-    color: white;
-    margin: 0 auto;
-}
-.comment_form textarea{
+.download_Profile{
     margin-top: 20px;
-    padding: 10px 0 10px 10px;
+    background-color: #30D5C8;
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
     border: none;
-    background-color: #F5F3F4;
+    border-radius: 5px;   
 }
-
-.comment_form button[type=submit]:hover{
-    background-color: #74ede3;
+.download_Profile:hover{
+    background-color: #54e9dd;
 }

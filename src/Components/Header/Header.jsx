@@ -72,7 +72,7 @@ export default function Header() {
             </Link>
           </NavItem>
           <NavItem>
-            <Link className="navbar_links" exact to=''>
+            <Link className="navbar_links" exact to='/OurNews'>
               Our News
             </Link>
           </NavItem>

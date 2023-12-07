@@ -1,26 +1,20 @@
-import p1 from '../images/p1.jpeg'
-import p2 from '../images/p2.jpeg'
-import p3 from '../images/p3.jpeg'
-
-const people= [
+export const Review= [
     {
         id: 1,
-        image: {p1},
-        name: 'Harry',
+        image: 'customers/customer 1.jpeg',
+        name: 'Charles',
         quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut sequi consequatur quas id numquam'
     },
     {
-        id: 1,
-        image: {p2},
-        name: 'Harry2',
+        id: 2,
+        image: 'customers/customer2.jpeg',
+        name: 'Charles',
         quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut sequi consequatur quas id numquam'
     },
     {
         id: 3,
-        image: {p3},
-        name: 'Harry3',
+        image: '/customers/customer3.jpeg',
+        name: 'Sarah',
         quote: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut sequi consequatur quas id numquam'
     }
 ];
-
-export default people;

@@ -3,6 +3,9 @@ import "./RentalFleets.css";
 import { Car } from "../../Data/cars_details";
 
 export default function RentalFleets() {
+
+  const recentFleet = Car.slice(-6);
+
   return (
     <div className="our_fleets">
       <div className="fleet_heading">
@@ -11,9 +14,9 @@ export default function RentalFleets() {
       </div>
       <div className="fleet">
       {
-      Car.map((car)=>(
+      recentFleet.map((car)=>(
       <div className="fleet_car">
-          <img src={car.image} alt={car.name} />
+          <img src={car.image[0]} alt={car.name} />
           <h3>{car.name}</h3>
         </div>
         ))
